@@ -1,3 +1,4 @@
+
 # Compiler and flags
 CC = gcc
 CFLAGS = -Wall -Wextra -g
@@ -8,8 +9,8 @@ SDL_FLAGS = $(shell pkg-config --cflags --libs sdl2)
 # Executable name
 TARGET = audioPlayer
 
-# Source files and automatic object file generation
-SRCS = main.c
+# Source files - ИСПРАВЛЕНО на audioplayer.c
+SRCS = audioplayer.c
 OBJS = $(SRCS:.c=.o)
 
 # Delete object file after linking, without breaking incremental compilation
